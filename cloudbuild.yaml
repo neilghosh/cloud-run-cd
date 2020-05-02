@@ -13,6 +13,6 @@ steps:
   - 'managed'
   - '--allow-unauthenticated'
   - '--revision-suffix'
-  - '$SHORT_SHA'
+  - '$SHORT_SHA_${_IMGAGE_VERSION}'
 substitutions:
     _IMGAGE_VERSION: latest
