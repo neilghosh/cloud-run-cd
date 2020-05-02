@@ -1,3 +1,5 @@
+substitutions:
+    _IMGAGE_VERSION: latest
 steps:
 # Deploy an image from Container Registry to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
@@ -6,7 +8,7 @@ steps:
   - 'deploy'
   - 'go-starter-service'
   - '--image'
-  - 'gcr.io/$PROJECT_ID/go-starter-service'
+  - 'gcr.io/$PROJECT_ID/go-starter-service:${_IMGAGE_VERSION}'
   - '--region'
   - 'us-central1'
   - '--platform'
