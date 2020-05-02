@@ -1,0 +1,14 @@
+steps:
+# Deploy an image from Container Registry to Cloud Run
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'go-starter-service'
+  - '--image'
+  - 'gcr.io/demoneil/go-starter-service'
+  - '--region'
+  - 'us-central1'
+  - '--platform'
+  - 'managed'
+  - '--allow-unauthenticated'
