@@ -6,7 +6,7 @@ steps:
   - 'deploy'
   - 'go-starter-service'
   - '--image'
-  - 'gcr.io/$PROJECT_ID/go-starter-service:${_IMGAGE_VERSION}'
+  - 'gcr.io/$PROJECT_ID/github.com/neilghosh/go-starter-service:${_IMGAGE_VERSION}'
   - '--region'
   - 'us-central1'
   - '--platform'
