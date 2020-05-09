@@ -13,9 +13,9 @@ steps:
   - 'managed'
   - '--allow-unauthenticated'
   - '--no-traffic'
-  - '${_NO_PROMOTE}'
+  - '${_NO_TRAFFIC}'
   - '--revision-suffix'
   - '${SHORT_SHA}--${_IMGAGE_VERSION}'
 substitutions:
     _IMGAGE_VERSION: latest
-    _NO_TRAFFIC: True
+    _NO_TRAFFIC: 'True'
