@@ -18,4 +18,4 @@ steps:
   - '${SHORT_SHA}--${_IMGAGE_VERSION}'
 substitutions:
     _IMGAGE_VERSION: latest
-    _NO_TRAFFIC:True
+    _NO_TRAFFIC: True
