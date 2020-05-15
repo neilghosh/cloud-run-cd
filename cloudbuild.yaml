@@ -15,4 +15,4 @@ steps:
   - '--revision-suffix'
   - '${SHORT_SHA}-${_IMGAGE_VERSION}'
 substitutions:
-    _IMGAGE_VERSION: 7ee22d5
+    _IMGAGE_VERSION: latest
